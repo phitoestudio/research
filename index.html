@@ -401,22 +401,28 @@
     .final-cta p { max-width: 720px; margin: 16px auto 0; color: var(--muted); }
     footer { padding: 34px 0 92px; color: var(--muted); border-top: 1px solid var(--line); }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .wa-float {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 70;
-      width: 62px;
-      height: 62px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      overflow: hidden;
-      background: #0fb20a;
-      box-shadow: 0 18px 42px rgba(66,240,168,.34);
-      border: 1px solid rgba(255,255,255,.38);
-    }
-    .wa-float img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wa-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 70;
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.wa-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
     .sticky-cta {
       position: fixed;
       left: 50%;
